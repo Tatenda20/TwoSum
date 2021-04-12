@@ -5,7 +5,7 @@ public class TwoSum
 {
     public static void main(String[] args)
     {
-        int[] nums = {1, 3, 4, 6, 7, 9};
+        int[] nums = {1, 2, 4, 6, 7, 9};
         int target = 5;
         System.out.println(Arrays.toString(twoSum(nums, target)));
     }
@@ -15,7 +15,7 @@ public class TwoSum
             return new int[]{0,0};
             }
 
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> map = new HashMap<>();
         for(int i = 0; i < nums.length; i++)
             {
             if(map.containsKey(nums[i]))
